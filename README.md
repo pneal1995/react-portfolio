@@ -1,6 +1,6 @@
 # Preston Neal
 
-#### [prestonneal.com](http://prestonneal.com)
+#### [preston-neal.com](http://preston-neal.com)
      
 ---
 
