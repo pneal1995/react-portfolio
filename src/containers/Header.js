@@ -9,21 +9,21 @@ const ProfileImage = styled.img`
 `;
 
 const ProfileTitle = styled.h1`
-  color: black;
+  color: #333;
 `
 
 const HeaderDiv = styled.div`
   padding-top: 5vh;
   text-align: center;
   font-family: 'Zilla Slab Highlight', sans-serif;
-  color: black;
+  color: #375E97;
 `;
 
 const NavLink = styled(Link)`
   display: inline-flex;
   margin: 0 5px;
-  color: black;
-  font-size: 16px;
+  color: #375E97;
+  font-size: 20px;
 `
 
 
@@ -32,13 +32,13 @@ class Header extends Component {
     return (
       <HeaderDiv>
         <Link to="/">
-          {/* <ProfileImage src={require('../assets/confettiCropped.jpg')} alt='Preston Neal'/> */}
+          <ProfileImage src={require('../assets/confettiCropped.png')} alt='Preston Neal'/>
           <ProfileTitle>Preston Neal</ProfileTitle>
         </Link>
         <div>
-          <NavLink to='/'>ABOUT</NavLink>
-          <NavLink to='/code'>CODE</NavLink>
-          <NavLink to='/contact'>CONTACT</NavLink>
+          <NavLink to='/'>About Me</NavLink>
+          <NavLink to='/code'>My Work</NavLink>
+          <NavLink to='/contact'>Contact</NavLink>
         </div>
         <hr/>
       </HeaderDiv>

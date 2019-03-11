@@ -55,7 +55,7 @@ class Contact extends Component {
         <EmailMe>Or, just email me directly at <a href="mailto:pneal1995@gmail.com" target="_blank"><strong>pneal1995@gmail.com</strong></a>.</EmailMe>
 
         {/* <hr/> */}
-        {/* <CenteredHeader><PortButton href="https://drive.google.com/file/d/0B-Wn-csD32OpVmUyVXFVa0JJakE/view" target="_blank">Download My Resume</PortButton></CenteredHeader> */}
+        <CenteredHeader><PortButton href="https://docs.google.com/document/export?format=pdf&id=1oBnnZo9vJI2bideuLYG7CH8cslCY2B0czd6qC3aiKn0&token=AC4w5ViKKbhsdOw7NYAuwGZ1yYLtusAXdQ%3A1552053205760&ouid=100236559789356257911&includes_info_params=true" target="_blank">Download My Resume</PortButton></CenteredHeader>
       </div>
     );
   }

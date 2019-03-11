@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import MusicDiv from "./MusicDiv.js";
 import { CenteredHeader } from "./App.js";
 import { ColorScheme } from "../theme/styleConstants";
 
@@ -41,6 +41,16 @@ const PortTitle = styled.h2`
   flex: 1;
   font-family: Gotham, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+`;
+
+const InterestTitle = styled.h3`
+  flex: 1;
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+
 
   @media (max-width: 600px) {
     text-align: center;
@@ -118,7 +128,7 @@ class Code extends Component {
                 <li>React</li>
                 <li>Redux</li>
                 <li>HTML5</li>
-                <li>CSS3/Sass</li>
+                <li>CSS</li>
                 <li>jQuery</li>
                 <li>AJAX</li>
               </ul>
@@ -137,13 +147,56 @@ class Code extends Component {
               <ul>
                 <li>Git</li>
                 <li>JSON</li>
+                <li>XML</li>
               </ul>
             </div>
           </div>
         </div>
+        <CenteredHeader><InterestTitle>My Recent Code:</InterestTitle></CenteredHeader>
         <hr />
+        
+        <PortRow>
+            <a href="http://www.pillow-realty.com" target="_blank">
+              <CodeThumbnail
+                src={require("../assets/PillowRealtyScreenshot.png")}
+              />
+            </a>
+            <PortAllText>
+              <PortTitleContainer>
+                <PortTitle>Pillow Realty</PortTitle>
+                <PortButtonContainer>
+                  <PortButton
+                    href="http://www.pillow-realty.com"
+                    target="_blank"
+                  >
+                    Demo
+                </PortButton>
+                  <PortButton
+                    href="https://github.com/namaslay33/GroupProject1"
+                    target="_blank"
+                  >
+                    Code
+                  </PortButton>
+                </PortButtonContainer>
+              </PortTitleContainer>
+              <PortDescription>
+                For my first group project at DigitalCrafts, my team made a mock realty website
+                using four API's. Pillow Realty provides an easy way to find median house prices,
+                 school information, and social events in any city in the US.
+            </PortDescription>
+              <UsedList>
+                <UsedItem>JavaScript</UsedItem>
+                <UsedItem>jQuery</UsedItem>
+                <UsedItem>HTML</UsedItem>
+                <UsedItem>CSS</UsedItem>
+                <UsedItem>Google Maps API</UsedItem>
+                <UsedItem>JSON and XML Data</UsedItem>
+              </UsedList>
+            </PortAllText>
+          </PortRow>
+          <hr />
         <div>
-          <CenteredHeader>Recent work:</CenteredHeader>
+         
           <PortRow>
             <a href="http://www.digitaldirector.org/" target="_blank">
               <CodeThumbnail src={require("../assets/DigitalDirectorScreenshot.png")} />
@@ -185,46 +238,61 @@ class Code extends Component {
             </PortAllText>
           </PortRow>
           <hr />
-          <PortRow>
-            <a href="http://www.pillow-realty.com" target="_blank">
-              <CodeThumbnail
-                src={require("../assets/PillowRealtyScreenshot.png")}
-              />
-            </a>
+
+        </div>
+        <PortRow>
+          <MusicDiv/>
             <PortAllText>
               <PortTitleContainer>
-                <PortTitle>Pillow Realty</PortTitle>
-                <PortButtonContainer>
+
+         
+                <UsedList>
+                <hr/>
                   <PortButton
-                    href="http://www.pillow-realty.com"
+                    href="https://open.spotify.com/artist/77cGYU3MiE01zjfFkEw4X8"
                     target="_blank"
                   >
-                    Demo
+                    Spotify
                 </PortButton>
                   <PortButton
-                    href="https://github.com/namaslay33/GroupProject1"
+                    href="https://itunes.apple.com/us/album/everlasting/1448209637?i=1448209640"
                     target="_blank"
                   >
-                    Code
+                    Apple Music
                   </PortButton>
-                </PortButtonContainer>
+                  <PortButton
+                    href="https://www.youtube.com/channel/UCv6xoAKhv5s5KrVV_n2VGFQ"
+                    target="_blank"
+                  >
+                    YouTube
+                  </PortButton>
+                  <PortButton
+                    href="https://www.amazon.com/Everlasting-Five-Track-Mind/dp/B07MB87MFH/ref=sr_1_1?ie=UTF8&qid=1547584862&sr=8-1&keywords=five+track+mind+everlasting"
+                    target="_blank"
+                  >
+                    Amazon
+                  </PortButton>
+               
+                  <PortButton
+                    href="www.fivetrackmind.com"
+                    target="_blank"
+                  >
+                    Five Track Mind
+                  </PortButton>
+
+                  </UsedList>
+                  
+                 
+
               </PortTitleContainer>
               <PortDescription>
-                For my first group project at DigitalCrafts, my team made a mock realty website
-                using four API's. Pillow Realty provides an easy way to find median house prices,
-                 school information, and social events in any city in the US.
+                
             </PortDescription>
-              <UsedList>
-                <UsedItem>JavaScript</UsedItem>
-                <UsedItem>jQuery</UsedItem>
-                <UsedItem>HTML</UsedItem>
-                <UsedItem>CSS</UsedItem>
-                <UsedItem>Google Maps API</UsedItem>
-                <UsedItem>JSON and XML Data</UsedItem>
-              </UsedList>
             </PortAllText>
           </PortRow>
-        </div>
+          <hr />
+       
+
       </div>
     );
   }
