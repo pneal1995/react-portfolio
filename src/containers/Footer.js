@@ -33,19 +33,19 @@ class Footer extends Component {
   render() {
     return (
       <FooterDiv>
-            <div className="row social" style={{ margin: 0 }}>
+            <div className="row social" style={{ margin: 0}}>
               <div className="col-lg-12">
                 <SocialIconList>
-                  <SocialIcon><a href="mailto:pneal1995@gmail.com" target="_blank"><FAIcon className="fa fa-envelope fa-fw fa-2x" /></a></SocialIcon>
-                  <SocialIcon><a href="#" target="_blank"><FAIcon className="fa fa-linkedin fa-fw fa-2x" /></a></SocialIcon>
-                  <SocialIcon><a href="https://github.com/pneal1995" target="_blank"><FAIcon className="fa fa-github fa-fw fa-2x" /></a></SocialIcon>
+                  <SocialIcon><a href="https://www.youtube.com/tehathleticone" target="_blank" rel="noopener noreferrer"><FAIcon className="fa fa-youtube fa-fw fa-2x" /></a></SocialIcon>
                 </SocialIconList>
                 <br />
               </div>
             </div>
             <div className="row" id="copyright" style={{ margin: 0 }}>
               <div className="col-lg-12">
-                <p className="small">© 2018 Preston Neal</p>
+                <p className="small">© 2019 Stay High, Will Holt </p>
+                <p className="small"> Made by Safarl with <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">React</a>/<a href="https://redux.js.org" target="_blank" rel="noopener noreferrer">Redux</a></p>
+              
               </div>
             </div>
       </FooterDiv>

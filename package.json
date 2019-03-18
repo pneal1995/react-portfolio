@@ -1,16 +1,18 @@
 {
-  "name": "reactportfolio",
+  "name": "osgpodcast",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://preston-neal.com",
+  "homepage": "http://osg.com",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "lottie-react-web": "^2.1.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-parallax": "^2.2.0",
-    "react-responsive-music-player": "^0.3.0",
     "react-router": "3",
     "react-scripts": "1.0.10",
+    "react-youtube": "^7.9.0",
+    "react-youtube-playlist": "^2.2.8",
     "styled-components": "^2.1.1"
   },
   "scripts": {

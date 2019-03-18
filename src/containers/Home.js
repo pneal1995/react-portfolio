@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Parallax } from "react-parallax";
 import styled from "styled-components";
-import { CenteredHeader } from './App.js'
-
+import { CenteredHeader, SubText } from './App.js'
+import YTPlayer from './YTPlayer.js';
 
 const MainDiv = styled.div`
   padding-top: 1rem;
-  padding-bottom: 10;
+  padding-bottom: 10rem;
   text-align: center;
+  margin-bottom:30rem;
   height: 150px;
 `;
 
@@ -19,23 +20,16 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <CenteredHeader>Hi! I'm Preston. I'm a software developer based in Houston, Texas.</CenteredHeader>
-        
+        <CenteredHeader>Stay High and Will Holt </CenteredHeader>
+        <SubText>Feat. Johnny, BigBukkake, and other guests </SubText>
+
+        <hr/>
         <MainDiv>
-          <p>
-            I enjoy learning new things everyday, and there is so much I learn from code. I enjoy working on the front end of projects, but I focus on mostly back end implementation. I always learn better ways to write clean code. I started programming in Highschool and recently graduated from DigitalCrafts, a code bootcamp located in downtown Houston.
-          </p>
-          <p>
-          ​  Outside of code, I enjoy <a href="https://www.fivetrackmind.com" target="_blank">making music</a>, playing videogames, and going out with friends.
-          </p>
+        <YTPlayer/>
         </MainDiv>
-        <Parallax
-      bgImage={image2}
-      strength={500} >
-      <div style={{ height: 300 }}>
-      
-      </div>
-    </Parallax>
+        <hr/>
+        
+       
       </div>
     );
   }

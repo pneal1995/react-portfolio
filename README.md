@@ -1,7 +1,7 @@
-# Preston Neal
+# Safarl
 
-#### [preston-neal.com](http://preston-neal.com)
+#### osg
      
 ---
 
-© 2017 Preston Neal
+© 2019 Safarl
