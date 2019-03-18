@@ -23,11 +23,6 @@ export const CenteredHeader = styled.h4`
   margin-bottom: 1.25em;
 `
 
-export const SubText = styled.h5`
-  text-align: center;
-  margin-bottom: 1.25em;
-`
-
 
 const ContainerDiv = styled.div`
   margin: 1% 17% 3% 17%;
